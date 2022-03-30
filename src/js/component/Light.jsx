@@ -1,17 +1,16 @@
 import React, { useState } from "react";
+import "../../styles/index.css";
 
-const Lights = () => {
-  let defaultColor = <div style={{ backgroundColor: "pink" }}>red</div>;
-  let clickedColor = <div style={{ backgroundColor: "red" }}>red</div>;
-
-  const [color, setColor] = useState(defaultColor);
-
-  return (
-    <div>
-      {color == defaultColor ? defaultColor : clickedColor}
-      <div onClick={() => setColor({ clickedColor })}>test and retest</div>
-    </div>
-  );
+const Lights = (props) => {
+	const [color, setColor] = useState(props.value);
+	return (
+		<div
+			className="circle"
+			style={{ background: color }}
+			onClick={() => setColor(props.changeColor)}>
+			departure
+		</div>
+	);
 };
 
 export default Lights;
