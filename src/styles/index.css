@@ -1,24 +1,35 @@
+.coloreddiv {
+  position: inline-flex;
+  background-color: black;
+  height: 100px;
+  width: 30px;
+  margin: auto;
+  margin-top: 3%;
+}
+
 .parentDiv {
   background-color: black;
   height: 400px;
   margin: auto;
-  width: 200px;
+  width: 170px;
+  border-radius: 25px;
+  padding-top: 1%;
 }
 .circle {
   height: 30%;
-  width: 80%;
+  width: 70%;
   margin: 0.5rem auto;
   border-radius: 50%;
 }
 .red {
-  background-color: red;
+  background-color: rgb(199, 0, 0);
 }
 .yellow {
-  background-color: yellow;
+  background-color: rgb(201, 201, 0);
 }
 .green {
-  background-color: green;
+  background-color: rgb(0, 194, 0);
 }
 .select {
-  box-shadow: 0px 0px 50px white;
+  box-shadow: 0px 0px 100px rgb(255, 255, 255);
 }
